@@ -12,7 +12,7 @@ ATestClass::ATestClass()
 	static ConstructorHelpers::FClassFinder<APawn> BpClass(TEXT("/Game/StarterContent/Bp_TestClass")); // 블루프린트 클래스 불러오기 꺽새안에 블루프린트 클래스가 상속받는 C++클래스 타입 , 블루프린트 클래스 경로
 	if (BpClass.Succeeded() && BpClass.Class != NULL) // 성공적으로 불러와졌는지.
 	{
-		BpClass.Class->//여기안에있음
+		//BpClass.Class->여기안에있음
 	}
 
 	UStaticMeshComponent* MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshComponent")); // StaticMeshasset에 넣을 StaticmeshComponent불러오기

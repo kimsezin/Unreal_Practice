@@ -8,12 +8,12 @@ public class Class : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" ,"UMG"}); // UMG추가
 
-		PrivateDependencyModuleNames.AddRange(new string[] {  });
+		//PrivateDependencyModuleNames.AddRange(new string[] {  }); 주석처리
 
 		// Uncomment if you are using Slate UI
-		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
+		PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" }); //주석풀기
 		
 		// Uncomment if you are using online features
 		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
